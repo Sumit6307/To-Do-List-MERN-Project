@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Update</title>
+    <link rel="stylesheet" href="css/style2.css">
+</head>
+<body>
+    <h1 style="text-align: center; font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;">Record Update Window</h1>
+    <div>
+        <form method="post" action="/updateres">
+           <p class="origina">Original Task <input class="box1" style="background-color:beige;" type="text" name="ogtask" value="<%=records[0].task%>" readonly/><br/> </p> 
+           
+        <p class="New-task"> New Task <input class="box2" style="background-color:beige" type="text" name="gtask" placeholder="Add new task" required/><br/>
+            <br></p> 
+            <input class="updt" type="submit" value="Update"/>
+        </form>
+    </div>
+</body>
+</html>
